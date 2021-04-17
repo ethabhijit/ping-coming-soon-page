@@ -1,0 +1,131 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Libre Franklin', sans-serif;
+}
+
+:root {
+	--blue-color: hsl(223, 87%, 63%);
+	--pale-blue-color: hsl(223, 100%, 88%);
+	--light-red-color: hsl(354, 100%, 66%);
+	--gray-color: hsl(0, 0%, 59%);
+	--very-dark-blue-color: hsl(209, 33%, 12%);
+}
+
+/* Container style */
+#container {
+	width: 100%;
+	padding: 4rem;
+	/*border: 2px solid green;*/
+}
+
+/* Brand container style */
+#brand__container img {
+	display: block;
+	margin: auto;
+}
+
+/* Description container style */
+#description__container {
+	/*border: 1px solid;*/
+	text-align: center;
+	margin-top: 2rem;
+}
+
+#description__container h1 {
+	font-weight: 300;
+	font-size: 2.5rem;
+	color: var(--gray-color);
+}
+
+#description__container h1 span {
+	font-weight: 700;
+	color: var(--very-dark-blue-color);
+}
+
+#description__container h5 {
+	font-weight: 300;
+	font-size: 1rem;
+	margin-top: 1rem;
+}
+
+/* Input container style */
+#input__container {
+	/*border: 1px solid;*/
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	margin-top: 2.5rem;
+}
+
+#email__input {
+	padding: 12px 20px;
+	margin-right: 1rem;
+	width: 350px;
+	border-radius: 25px;
+	border: 1px solid var(--pale-blue-color);
+}
+
+#email__input::placeholder {
+	color: var(--pale-blue-color);
+}
+
+#submit__button {
+	width: 150px;
+	border-radius: 25px;
+	font-weight: 600;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	background-color: var(--blue-color);
+}
+
+/* Illustration container style */
+#illustration__container {
+	margin-top: 4rem;
+}
+
+#illustration__container img {
+	width: 40%;
+	display: block;
+	margin: auto;
+}
+
+/* Media link style */
+
+#media__links__container {
+	margin-top: 4rem;
+	display: flex;
+	justify-content: center;
+}
+
+#media__links__container i {
+	border-radius: 50%;
+	border: 1px solid var(--pale-blue-color);
+	color: var(--blue-color);
+	width: 35px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 1rem;
+	transition: 0.3s all;
+	cursor: pointer;
+}
+
+#media__links__container i:hover {
+	background-color: var(--pale-blue-color);
+	color: #fff;
+}
+
+/* Copywrite container */
+#copywrite__text__container {
+	text-align: center;
+	margin-top: 2rem;
+	font-size: 0.8rem;
+}
+
+.warning {
+	border-color: red !important;
+}
